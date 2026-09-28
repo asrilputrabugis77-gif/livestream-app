@@ -1,0 +1,78 @@
+name: livestream_app
+description: Mobile Live Streaming Application for Android
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Navigation
+  cupertino_icons: ^1.0.2
+  get: ^4.6.5
+  flutter_screenutil: ^5.9.0
+  
+  # State Management
+  provider: ^6.0.0
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.10.0
+  cloud_firestore: ^4.13.6
+  firebase_storage: ^11.5.6
+  firebase_messaging: ^14.6.9
+  
+  # Video & Streaming
+  agora_rtc_engine: ^6.2.2
+  permission_handler: ^11.4.4
+  camera: ^0.10.5
+  video_player: ^2.7.2
+  
+  # Networking
+  http: ^1.1.0
+  dio: ^5.3.1
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Utilities
+  intl: ^0.19.0
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  lottie: ^2.6.0
+  image_picker: ^1.0.4
+  
+  # Logging
+  logger: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_linter: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.6
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/fonts/
+    
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
